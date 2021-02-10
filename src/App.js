@@ -3,43 +3,14 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Homepage from './pages/homepage/Homepage';
-
-const HatsPage = () => (
-  <div>
-    <h1>HATS PAGE</h1>
-  </div>
-);
-const JacketsPage = () => (
-  <div>
-    <h1>JACKETS PAGE</h1>
-  </div>
-);
-const SneakersPage = () => (
-  <div>
-    <h1>SNEAKERS PAGE</h1>
-  </div>
-);
-const WomensPage = () => (
-  <div>
-    <h1>WOMENS PAGE</h1>
-  </div>
-);
-const MensPage = () => (
-  <div>
-    <h1>MENS PAGE</h1>
-  </div>
-);
+import Shop from './pages/shop/Shop';
 
 function App() {
   return (
     <div>
       <Switch>
         <Route exact path='/' component={Homepage} />
-        <Route path='/shop/hats' component={HatsPage} />
-        <Route path='/shop/jackets' component={JacketsPage} />
-        <Route path='/shop/sneakers' component={SneakersPage} />
-        <Route path='/shop/womens' component={WomensPage} />
-        <Route path='/shop/mens' component={MensPage} />
+        <Route path='/shop' component={Shop} />
       </Switch>
     </div>
   );
